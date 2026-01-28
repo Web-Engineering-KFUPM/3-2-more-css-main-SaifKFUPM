@@ -35,18 +35,10 @@
   - Apply a global box-sizing reset using the universal selector (hint use * selector).
 */
 
-* {
-  box-sizing: border-box;
-}
-
 /* TODO 2:
    - Give .site-header & .site-footer a subtle background using var(--card)
    - Make the .tagline class a bit muted (use var(--muted))
 */
-
-.tagline {
-  color: var(--muted);
-}
 
 /* TODO 3:
    - Set the color to the brand variable and make the text bold for the .color-demo .color-note class.
@@ -184,11 +176,19 @@ body {
   --card: #ffffff; /* card/background surfaces */
 }
 
+* {
+  box-sizing: border-box;
+}
+
 .site-header,
 .site-footer {
   text-align: center;
   padding: 1.25rem;
   background: var(--card);
+}
+
+.tagline {
+  color: var(--muted);
 }
 
 .container {
